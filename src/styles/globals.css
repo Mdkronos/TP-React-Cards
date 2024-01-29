@@ -1,0 +1,97 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  min-height: 100vh;
+  background-image: url("/image/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+div h2 {
+  font-size: 4rem;
+}
+
+div h3 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.folderMovies {
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida S';
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  background: rgba(5, 7, 12, 0.5);
+}
+
+.cardsPosition {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+  margin-left: 2rem;
+  
+}
+.portada {
+  border: 2px solid #FF6805;
+  width: 350px;
+  height: 600px;
+  background-color: #FF6805;
+}
+
+.image {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.title {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 10px;
+}
+.released {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.1rem;
+  margin: 10px;
+}
+
+.btnPosition {
+  display: flex;
+  flex-direction: row;
+  align-items:flex-start;
+  justify-content: space-around;
+}
+
+.btn {
+  background-color: rgb(26, 26, 26);
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid yellow;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 2px yellowgreen;
+  
+}
+.btn:hover {
+  background-color: yellow; 
+  color: black;
+  transition: background-color 0.8s ease;
+}
